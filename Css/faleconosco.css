@@ -20,12 +20,6 @@ body{
     background-color: var(--cinzaClaro);
 }
 
-#container{
-    height: 10vh;
-    width: 100vw;
-    max-width: 100vw;
-}
-
 header{
     display: flex;
     width: 100vw;
@@ -44,6 +38,13 @@ header a img{
 
 h1{
     font-family: "Montserrat", Consolas;
+}
+
+#container{
+    display: flex;
+    height: 85vh;
+    width: 100vw;
+    max-width: 100vw;
 }
 
 .contact{
