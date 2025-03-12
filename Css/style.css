@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root{
     --vermelho: #BF1622;
@@ -19,7 +20,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: var(--cinzaClaro);
+    background-color: var(--rbranco);
 }
 
 #container{
@@ -45,8 +46,33 @@ header a img{
 }
 
 h1{
-    font-family: "Montserrat", Consolas;
+    font-family: "Playfair", Arial, Helvetica, sans-serif;
     color: var(--rbranco);
+}
+
+.menu-title{
+    display: flex;
+    width: 100%;
+    height: 3vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.straight-line{
+    flex: 1;
+    height: 2px;
+    background-color: gray;
+    max-width: 25vw;
+}
+
+.menu-title-text{
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 section{
@@ -54,9 +80,9 @@ section{
     margin: 20px auto;
     padding: 20px;
     flex-direction: row;  
-    background-color: var(--branco);
+    justify-content: center;
 }
-
+/* 
 section h2{
     color: var(--vermelho);
     padding-right: 15px;
@@ -64,13 +90,13 @@ section h2{
     width: 100px;
     align-items: center;
     text-align: center;
-}
+    font-family: "Playfair", Arial, Helvetica, sans-serif;
+} */
 
 .pprincipal {
     display: flex;
     align-items: center;
     margin: 15px;
-    background-color: var(--cinzaClaro);
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(red, green, blue, alpha);
@@ -79,16 +105,30 @@ section h2{
     width: 20vw;
     height: 25vh;
     gap: 5px;
+    border: none;
+    transition: transform 0.5s ease, border 0.3s ease;
+}
+
+.pprincipal:hover{
+    transform: scale(1.2);
+    border: 2px solid var(--cinzaClaro);
 }
 
 .pprincipal img {
-    height: 100px;
+    height: 15vh;
+
+}
+
+.pprincipal p {
+    font-family: "Playfair", Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 h3{
     max-height: 50%;
     margin: auto;
     text-align: center;
+    font-family: "Playfair", Arial, Helvetica, sans-serif;
 }
 
 footer {
@@ -100,13 +140,14 @@ footer {
      height: 5vh;
      justify-content: space-between;
      align-items: center;
-    }
+}
 
 footer p {
     display: flex;
     font-size: 18px;
     margin: 10px;
     color: var(--rbranco);
+    font-family: "Playfair", Arial, Helvetica, sans-serif;
 }
 
 .footerLinks{
@@ -118,7 +159,7 @@ footer p {
 .footerLinks a{
     color: var(--rbranco);
     text-decoration: none; /*Remove a linha*/
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Playfair", Arial, Helvetica, sans-serif;
 }
 
 .footerLinks a:hover{
